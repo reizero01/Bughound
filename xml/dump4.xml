@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="Bughound">
+	<table_structure name="bugs">
+		<field Field="ID" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="Program_ID" Type="int(11)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="Report_Type" Type="int(6)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Severity" Type="int(3)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Attached" Type="int(1)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Attachment_ID" Type="int(11)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Problem_summary" Type="varchar(255)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Reproducible" Type="int(1)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Problem" Type="varchar(255)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Suggest_fix" Type="varchar(255)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Report_Employee_ID" Type="int(11)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="Report_date" Type="date" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Area_ID" Type="int(11)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="Assign_Employee_ID" Type="int(11)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="Comment" Type="varchar(255)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Status" Type="int(3)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Priority" Type="int(100)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Resolution" Type="int(100)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Resolution_Version" Type="int(100)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Resolved_Employee_ID" Type="int(11)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="Resolved_Date" Type="date" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Tested_Employee_ID" Type="int(11)" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="Tested_Date" Type="date" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="Deferred" Type="int(1)" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="bugs" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="ID" Collation="A" Cardinality="10" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="bugs" Non_unique="1" Key_name="Program_ID" Seq_in_index="1" Column_name="Program_ID" Collation="A" Cardinality="10" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="bugs" Non_unique="1" Key_name="Report_Employee_ID" Seq_in_index="1" Column_name="Report_Employee_ID" Collation="A" Cardinality="5" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="bugs" Non_unique="1" Key_name="Assign_Employee_ID" Seq_in_index="1" Column_name="Assign_Employee_ID" Collation="A" Cardinality="5" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="bugs" Non_unique="1" Key_name="Resolved_Employee_ID" Seq_in_index="1" Column_name="Resolved_Employee_ID" Collation="A" Cardinality="5" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="bugs" Non_unique="1" Key_name="Tested_Employee_ID" Seq_in_index="1" Column_name="Tested_Employee_ID" Collation="A" Cardinality="5" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="bugs" Non_unique="1" Key_name="Area_ID" Seq_in_index="1" Column_name="Area_ID" Collation="A" Cardinality="5" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="bugs" Engine="InnoDB" Version="10" Row_format="Compact" Rows="10" Avg_row_length="1638" Data_length="16384" Max_data_length="0" Index_length="98304" Data_free="0" Auto_increment="11" Create_time="2019-03-14 19:37:33" Collation="latin1_swedish_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="bugs">
+	<row>
+		<field name="ID">1</field>
+		<field name="Program_ID" xsi:nil="true" />
+		<field name="Report_Type" xsi:nil="true" />
+		<field name="Severity" xsi:nil="true" />
+		<field name="Attached" xsi:nil="true" />
+		<field name="Attachment_ID" xsi:nil="true" />
+		<field name="Problem_summary" xsi:nil="true" />
+		<field name="Reproducible" xsi:nil="true" />
+		<field name="Problem" xsi:nil="true" />
+		<field name="Suggest_fix" xsi:nil="true" />
+		<field name="Report_Employee_ID" xsi:nil="true" />
+		<field name="Report_date" xsi:nil="true" />
+		<field name="Area_ID" xsi:nil="true" />
+		<field name="Assign_Employee_ID" xsi:nil="true" />
+		<field name="Comment" xsi:nil="true" />
+		<field name="Status" xsi:nil="true" />
+		<field name="Priority" xsi:nil="true" />
+		<field name="Resolution" xsi:nil="true" />
+		<field name="Resolution_Version" xsi:nil="true" />
+		<field name="Resolved_Employee_ID" xsi:nil="true" />
+		<field name="Resolved_Date" xsi:nil="true" />
+		<field name="Tested_Employee_ID" xsi:nil="true" />
+		<field name="Tested_Date" xsi:nil="true" />
+		<field name="Deferred" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="ID">2</field>
+		<field name="Program_ID">1</field>
+		<field name="Report_Type">1</field>
+		<field name="Severity">1</field>
+		<field name="Attached">0</field>
+		<field name="Attachment_ID">0</field>
+		<field name="Problem_summary"></field>
+		<field name="Reproducible">0</field>
+		<field name="Problem"></field>
+		<field name="Suggest_fix"></field>
+		<field name="Report_Employee_ID">5</field>
+		<field name="Report_date">2222-02-02</field>
+		<field name="Area_ID">1</field>
+		<field name="Assign_Employee_ID">5</field>
+		<field name="Comment"></field>
+		<field name="Status">1</field>
+		<field name="Priority">1</field>
+		<field name="Resolution">1</field>
+		<field name="Resolution_Version">1</field>
+		<field name="Resolved_Employee_ID">5</field>
+		<field name="Resolved_Date">0000-00-00</field>
+		<field name="Tested_Employee_ID">5</field>
+		<field name="Tested_Date">0000-00-00</field>
+		<field name="Deferred">0</field>
+	</row>
+	<row>
+		<field name="ID">3</field>
+		<field name="Program_ID">5</field>
+		<field name="Report_Type">1</field>
+		<field name="Severity">1</field>
+		<field name="Attached">0</field>
+		<field name="Attachment_ID">0</field>
+		<field name="Problem_summary"></field>
+		<field name="Reproducible">0</field>
+		<field name="Problem"></field>
+		<field name="Suggest_fix"></field>
+		<field name="Report_Employee_ID">5</field>
+		<field name="Report_date">2002-01-02</field>
+		<field name="Area_ID">1</field>
+		<field name="Assign_Employee_ID">5</field>
+		<field name="Comment"></field>
+		<field name="Status">1</field>
+		<field name="Priority">1</field>
+		<field name="Resolution">1</field>
+		<field name="Resolution_Version">1</field>
+		<field name="Resolved_Employee_ID">5</field>
+		<field name="Resolved_Date">0000-00-00</field>
+		<field name="Tested_Employee_ID">5</field>
+		<field name="Tested_Date">0000-00-00</field>
+		<field name="Deferred">0</field>
+	</row>
+	<row>
+		<field name="ID">4</field>
+		<field name="Program_ID">1</field>
+		<field name="Report_Type">1</field>
+		<field name="Severity">1</field>
+		<field name="Attached">0</field>
+		<field name="Attachment_ID">0</field>
+		<field name="Problem_summary"></field>
+		<field name="Reproducible">0</field>
+		<field name="Problem"></field>
+		<field name="Suggest_fix"></field>
+		<field name="Report_Employee_ID">5</field>
+		<field name="Report_date">2003-01-02</field>
+		<field name="Area_ID">1</field>
+		<field name="Assign_Employee_ID">5</field>
+		<field name="Comment"></field>
+		<field name="Status">1</field>
+		<field name="Priority">1</field>
+		<field name="Resolution">1</field>
+		<field name="Resolution_Version">1</field>
+		<field name="Resolved_Employee_ID">5</field>
+		<field name="Resolved_Date">0000-00-00</field>
+		<field name="Tested_Employee_ID">5</field>
+		<field name="Tested_Date">0000-00-00</field>
+		<field name="Deferred">0</field>
+	</row>
+	<row>
+		<field name="ID">5</field>
+		<field name="Program_ID">1</field>
+		<field name="Report_Type">1</field>
+		<field name="Severity">1</field>
+		<field name="Attached">1</field>
+		<field name="Attachment_ID">0</field>
+		<field name="Problem_summary"></field>
+		<field name="Reproducible">0</field>
+		<field name="Problem"></field>
+		<field name="Suggest_fix"></field>
+		<field name="Report_Employee_ID">5</field>
+		<field name="Report_date">2009-01-04</field>
+		<field name="Area_ID">1</field>
+		<field name="Assign_Employee_ID">5</field>
+		<field name="Comment"></field>
+		<field name="Status">1</field>
+		<field name="Priority">1</field>
+		<field name="Resolution">1</field>
+		<field name="Resolution_Version">1</field>
+		<field name="Resolved_Employee_ID">5</field>
+		<field name="Resolved_Date">0000-00-00</field>
+		<field name="Tested_Employee_ID">5</field>
+		<field name="Tested_Date">0000-00-00</field>
+		<field name="Deferred">0</field>
+	</row>
+	<row>
+		<field name="ID">6</field>
+		<field name="Program_ID">1</field>
+		<field name="Report_Type">1</field>
+		<field name="Severity">1</field>
+		<field name="Attached">0</field>
+		<field name="Attachment_ID">0</field>
+		<field name="Problem_summary"></field>
+		<field name="Reproducible">0</field>
+		<field name="Problem"></field>
+		<field name="Suggest_fix"></field>
+		<field name="Report_Employee_ID">5</field>
+		<field name="Report_date">2004-04-03</field>
+		<field name="Area_ID">1</field>
+		<field name="Assign_Employee_ID">5</field>
+		<field name="Comment"></field>
+		<field name="Status">1</field>
+		<field name="Priority">1</field>
+		<field name="Resolution">1</field>
+		<field name="Resolution_Version">1</field>
+		<field name="Resolved_Employee_ID">5</field>
+		<field name="Resolved_Date">0000-00-00</field>
+		<field name="Tested_Employee_ID">5</field>
+		<field name="Tested_Date">0000-00-00</field>
+		<field name="Deferred">0</field>
+	</row>
+	<row>
+		<field name="ID">7</field>
+		<field name="Program_ID">1</field>
+		<field name="Report_Type">1</field>
+		<field name="Severity">1</field>
+		<field name="Attached">0</field>
+		<field name="Attachment_ID">0</field>
+		<field name="Problem_summary"></field>
+		<field name="Reproducible">0</field>
+		<field name="Problem"></field>
+		<field name="Suggest_fix"></field>
+		<field name="Report_Employee_ID">5</field>
+		<field name="Report_date">2005-01-02</field>
+		<field name="Area_ID">1</field>
+		<field name="Assign_Employee_ID">5</field>
+		<field name="Comment"></field>
+		<field name="Status">1</field>
+		<field name="Priority">1</field>
+		<field name="Resolution">1</field>
+		<field name="Resolution_Version">1</field>
+		<field name="Resolved_Employee_ID">5</field>
+		<field name="Resolved_Date">0000-00-00</field>
+		<field name="Tested_Employee_ID">5</field>
+		<field name="Tested_Date">0000-00-00</field>
+		<field name="Deferred">0</field>
+	</row>
+	<row>
+		<field name="ID">8</field>
+		<field name="Program_ID">1</field>
+		<field name="Report_Type">1</field>
+		<field name="Severity">1</field>
+		<field name="Attached">1</field>
+		<field name="Attachment_ID">3</field>
+		<field name="Problem_summary"></field>
+		<field name="Reproducible">0</field>
+		<field name="Problem"></field>
+		<field name="Suggest_fix"></field>
+		<field name="Report_Employee_ID">5</field>
+		<field name="Report_date">2005-02-04</field>
+		<field name="Area_ID">1</field>
+		<field name="Assign_Employee_ID">5</field>
+		<field name="Comment"></field>
+		<field name="Status">1</field>
+		<field name="Priority">1</field>
+		<field name="Resolution">1</field>
+		<field name="Resolution_Version">1</field>
+		<field name="Resolved_Employee_ID">5</field>
+		<field name="Resolved_Date">0000-00-00</field>
+		<field name="Tested_Employee_ID">5</field>
+		<field name="Tested_Date">0000-00-00</field>
+		<field name="Deferred">0</field>
+	</row>
+	<row>
+		<field name="ID">9</field>
+		<field name="Program_ID">1</field>
+		<field name="Report_Type">1</field>
+		<field name="Severity">1</field>
+		<field name="Attached">1</field>
+		<field name="Attachment_ID">4</field>
+		<field name="Problem_summary"></field>
+		<field name="Reproducible">0</field>
+		<field name="Problem"></field>
+		<field name="Suggest_fix"></field>
+		<field name="Report_Employee_ID">5</field>
+		<field name="Report_date">2121-01-02</field>
+		<field name="Area_ID">1</field>
+		<field name="Assign_Employee_ID">5</field>
+		<field name="Comment"></field>
+		<field name="Status">1</field>
+		<field name="Priority">1</field>
+		<field name="Resolution">1</field>
+		<field name="Resolution_Version">1</field>
+		<field name="Resolved_Employee_ID">5</field>
+		<field name="Resolved_Date">0000-00-00</field>
+		<field name="Tested_Employee_ID">5</field>
+		<field name="Tested_Date">0000-00-00</field>
+		<field name="Deferred">0</field>
+	</row>
+	<row>
+		<field name="ID">10</field>
+		<field name="Program_ID">5</field>
+		<field name="Report_Type">1</field>
+		<field name="Severity">1</field>
+		<field name="Attached">1</field>
+		<field name="Attachment_ID">5</field>
+		<field name="Problem_summary">YOLO</field>
+		<field name="Reproducible">0</field>
+		<field name="Problem"></field>
+		<field name="Suggest_fix">OK</field>
+		<field name="Report_Employee_ID">5</field>
+		<field name="Report_date">0023-01-02</field>
+		<field name="Area_ID">1</field>
+		<field name="Assign_Employee_ID">5</field>
+		<field name="Comment"></field>
+		<field name="Status">1</field>
+		<field name="Priority">2</field>
+		<field name="Resolution">1</field>
+		<field name="Resolution_Version">1</field>
+		<field name="Resolved_Employee_ID">5</field>
+		<field name="Resolved_Date">0000-00-00</field>
+		<field name="Tested_Employee_ID">5</field>
+		<field name="Tested_Date">0000-00-00</field>
+		<field name="Deferred">0</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>
